@@ -67,7 +67,7 @@ Run the `data_preparation.py` script to preprocess the data:
 python data_preparation.py
 ```
 
-### Model Training
+### Model
 
 Train the model using the `model.py` script:
 
