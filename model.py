@@ -1,11 +1,11 @@
 # model.py
 import numpy as np
 import matplotlib.pyplot as plt
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Dense, Dropout
-from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.models import Model # type: ignore
+from tensorflow.keras.layers import Input, Dense, Dropout # type: ignore
+from tensorflow.keras.optimizers import Adam # type: ignore
 from data_preparation import load_and_prepare_data
-from keras.callbacks import EarlyStopping
+from keras.callbacks import EarlyStopping # type: ignore
 
 def create_model(input_dim, num_classes_categoria, num_classes_dueno):
     """
@@ -39,7 +39,7 @@ def create_model(input_dim, num_classes_categoria, num_classes_dueno):
     return model
 
 if __name__ == "__main__":
-    file_path = 'Automatizacion_Clasificacion_EDA_HIDRAL.xlsx'
+    file_path = 'data/Automatizacion_Clasificacion_EDA_HIDRAL.xlsx'
     X, y, _, label_encoders = load_and_prepare_data(file_path)
     y_categoria = y[:, 0].astype(int)
     y_dueno = y[:, 1].astype(int)

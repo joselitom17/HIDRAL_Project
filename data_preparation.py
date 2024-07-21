@@ -2,6 +2,7 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
+import openpyxl
 
 def load_and_prepare_data(file_path):
     """
@@ -69,7 +70,7 @@ def load_and_prepare_data(file_path):
 
 
 if __name__ == "__main__":
-    path = 'Automatizacion_Clasificacion_EDA_HIDRAL.xlsx'
+    path = 'data/Automatizacion_Clasificacion_EDA_HIDRAL.xlsx'
     X, y, tfidf, label_encoders = load_and_prepare_data(path)
 
     # Guardar los objetos procesados si es necesario
