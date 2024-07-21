@@ -106,6 +106,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License.
-```
-
-Replace `https://github.com/yourusername/task-classification-automation.git` with the actual URL of your GitHub repository. Also, ensure that you create a `requirements.txt` file listing all the dependencies used in your project.
